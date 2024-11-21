@@ -39,6 +39,6 @@ public class VeiculoController : ControllerBase
     [HttpDelete("Deletar_Veiculo")]
     public void DeletarVeiculo(int id)
     {
-        _service.DeletarVeiculo(id);
+        _service.DeletarVeiculo(id);  
     }
 }

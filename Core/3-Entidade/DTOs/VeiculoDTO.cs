@@ -8,13 +8,12 @@ namespace Core._3_Entidade.DTOs
 {
     public class VeiculoDTO
     {
-        public string Tipo;
-        public string Modelo;
-        public int Ano;
-        public int CapacidadeTanque;
-        public int ConsumoPorKm;
-        public int DistanciaPercorrida;
-        public int ConsumoEstimado;
-        public int AutomovelId;
+        public string Tipo { get; set; }
+        public string Modelo { get; set; }
+        public int Ano { get; set; }
+        public int CapacidadeTanque { get; set; }
+        public int ConsumoPorKm { get; set; }
+        public int DistanciaPercorrida { get; set; }
+        public int ConsumoEstimado { get; set; }
     }
 }

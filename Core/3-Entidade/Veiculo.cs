@@ -9,15 +9,15 @@ namespace Core.Entidade
 {
     public class Veiculo : IVeiculo
     {
-        public int id;
-        public string Tipo;
-        public string Modelo;
-        public int Ano;
-        public int CapacidadeTanque;
-        public int ConsumoPorKm;
-        public int DistanciaPercorrida;
-        public int ConsumoEstimado;
-        public int AutomovelId;
+        public int id { get; set; }
+        public string Tipo { get; set; }
+        public string Modelo { get; set; }
+        public int Ano { get; set; }
+        public int CapacidadeTanque { get; set; }
+        public int ConsumoPorKm { get; set; }
+        public int DistanciaPercorrida { get; set; }
+        public int ConsumoEstimado { get; set; }
+        public int AutomovelId { get; set; }
 
         public virtual string ExibirDetalhes()
         {
