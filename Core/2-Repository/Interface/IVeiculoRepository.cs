@@ -10,7 +10,7 @@ namespace Core._2_Repository.Interface
 {
     public interface IVeiculoRepository
     {
-        void AdicionarVeiculo(Veiculo veiculo);
+        long AdicionarVeiculo(Veiculo veiculo);
 
         List<Veiculo> ListarVeiculo();
 

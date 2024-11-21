@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Core._3_Entidade.DTOs;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +17,7 @@ namespace Core.Repository
             ConnectionString = config.GetConnectionString("DefaultConnection");
         }
 
-        public void AdicionarVeiculo()
+        public void AdicionarVeiculo(CreateCarroDTO carro)
         {
 
         }

@@ -19,9 +19,9 @@ namespace Core._1_Service
             _repository = repository;   
         }
 
-        public void AdicionarVeiculo(Veiculo veiculo)
+        public long AdicionarVeiculo(Veiculo veiculo)
         {
-            _repository.AdicionarVeiculo(veiculo);
+            return _repository.AdicionarVeiculo(veiculo);
         }
 
         public List<Veiculo> ListarVeiculo()

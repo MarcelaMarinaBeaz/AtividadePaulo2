@@ -21,10 +21,10 @@ namespace Core.Repository
             ConnectionString = config.GetConnectionString("DefaultConnection");
         }
 
-        public void AdicionarVeiculo(Veiculo veiculo)
+        public long AdicionarVeiculo(Veiculo veiculo)
         {
             using var connection = new SQLiteConnection(ConnectionString);
-            connection.Insert<Veiculo>(veiculo);
+            return connection.Insert<Veiculo>(veiculo);
         }
 
         public List<Veiculo> ListarVeiculo()
