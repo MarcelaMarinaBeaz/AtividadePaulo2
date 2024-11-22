@@ -1,4 +1,5 @@
-﻿using Core.Entidade;
+﻿using Core._3_Entidade.DTOs;
+using Core.Entidade;
 using System;
 using System.Collections.Generic;
 using System.Data.SQLite;

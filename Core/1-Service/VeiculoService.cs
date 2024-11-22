@@ -1,5 +1,6 @@
 ﻿using Core._1_Service.Interface;
 using Core._2_Repository.Interface;
+using Core._3_Entidade.DTOs;
 using Core.Entidade;
 using System;
 using System.Collections.Generic;

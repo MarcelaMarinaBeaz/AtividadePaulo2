@@ -17,6 +17,9 @@ builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddScoped<IVeiculoService, VeiculoService>();
 builder.Services.AddScoped<IVeiculoRepository, VeiculoRepository>();
 
+builder.Services.AddScoped<ICaminhaoService, CaminhaoService>();
+builder.Services.AddScoped<ICaminhaoRepository, CaminhaoRepository>();
+
 var app = builder.Build();
 
 

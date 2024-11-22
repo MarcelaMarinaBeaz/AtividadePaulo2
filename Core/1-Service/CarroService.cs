@@ -1,4 +1,5 @@
 ﻿using Core._1_Service.Interface;
+using Core._2_Repository.Interface;
 using Core._3_Entidade.DTOs;
 using Core.Entidade;
 using Core.Repository;
@@ -11,24 +12,28 @@ using System.Threading.Tasks;
 
 namespace Core._1_Service
 {
-    public class CarroService
+    public class CarroService : ICarroService
     {
         private readonly IVeiculoService _service;
-        private readonly CarroRepository repositorio;
+        private readonly ICarroRepositoey _repositorio;
 
-        public CarroService(IVeiculoService service, IConfiguration config)
+        public CarroService(IVeiculoService service, ICarroRepositoey repository)
         {
             _service = service;
-            repositorio = new CarroRepository(config);
+            _repositorio = repository;
         }
 
-        public void AdicionarCarro(Carro c)
+        public long AdicionarCarro(Carro c)
         {
             Veiculo veiculo = new Veiculo()
-            {
-                Ano = c.Ano,
+            {             
                 Tipo = c.Tipo,
-                Modelo =c.Modelo
+                Modelo =c.Modelo,
+                Ano = c.Ano,
+                CapacidadeTanque= c.CapacidadeTanque,
+                ConsumoPorKm= c.ConsumoPorKm,
+                DistanciaPercorrida= c.DistanciaPercorrida,
+                ConsumoEstimado= c.ConsumoEstimado
             };
             long IdVeiculo = _service.AdicionarVeiculo(veiculo);
             CreateCarroDTO dto = new CreateCarroDTO()
@@ -36,8 +41,25 @@ namespace Core._1_Service
                 AutomovelId = (int)IdVeiculo,
                 Tipo = c.Tipo,
             };
-            repositorio.AdicionarVeiculo(dto);
+           return _repositorio.AdicionarCarro(dto);
+        }
+        public List<Carro> ListarCarro()
+        {
+            return _repositorio.ListarCarro();
+        }
 
+        public void EditarCarro(Carro carro)
+        {
+            _repositorio.EditarCarro(carro);
+        }
+
+        public void DeletarCarro(int id)
+        {
+            _repositorio.DeletarCarro(id);
+        }
+        public Carro BuscarPorId(int id)
+        {
+            return _repositorio.BuscarPorId(id);
         }
     }
 }

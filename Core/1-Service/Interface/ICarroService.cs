@@ -1,16 +1,15 @@
-﻿using Core._3_Entidade.DTOs;
-using Core.Entidade;
+﻿using Core.Entidade;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Core._2_Repository.Interface
+namespace Core._1_Service.Interface
 {
-    public interface ICarroRepositoey
+    public interface ICarroService
     {
-        long AdicionarCarro(CreateCarroDTO carro);
+        long AdicionarCarro(Carro c);
         List<Carro> ListarCarro();
         void EditarCarro(Carro carro);
         void DeletarCarro(int id);

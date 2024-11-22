@@ -1,16 +1,15 @@
-﻿using Core._3_Entidade.DTOs;
-using Core.Entidade;
+﻿using Core.Entidade;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Core._2_Repository.Interface
+namespace Core._1_Service.Interface
 {
-    public interface ICaminhaoRepository
+    public interface ICaminhaoService
     {
-        long AdicionarCaminhao(CreateCaminhaoDTO caminhao);
+        long AdicionarCaminhao(Caminhao c);
         List<Caminhao> ListarCaminhao();
         void EditarCaminhao(Caminhao caminhao);
         void DeletarCaminhao(int id);

@@ -1,4 +1,5 @@
-﻿using Core.Entidade;
+﻿using Core._3_Entidade.DTOs;
+using Core.Entidade;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace Core._1_Service.Interface
 {
     public interface IVeiculoService
     {
-        void AdicionarVeiculo(Veiculo veiculo);
+        long AdicionarVeiculo(Veiculo veiculo);
 
         List<Veiculo> ListarVeiculo();
 

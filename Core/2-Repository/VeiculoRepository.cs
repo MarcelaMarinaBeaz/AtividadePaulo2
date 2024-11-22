@@ -1,5 +1,6 @@
 ﻿using Atividade_Veiculo.Interface;
 using Core._2_Repository.Interface;
+using Core._3_Entidade.DTOs;
 using Core.Entidade;
 using Dapper.Contrib.Extensions;
 using Microsoft.Extensions.Configuration;
