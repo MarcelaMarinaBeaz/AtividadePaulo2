@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y9EEM5IT5poL6gUfzo+y6jF0wcWSvoipVDe8G3liQ1EarwH7IUiyv/KcXLN8pv+RdpT4J4xMQ0E3uPUNOsdZWw==",
+  "dgSpecHash": "WJ1AJwP6txTX6J26wYdJLZCdECjBxhYAFs7MPgSLJl0KhsZuHwl3e32OMwh7NBp43gb8IgjVp59ousmoeQiH5A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alunos\\Desktop\\Eduarda\\AtividadePaulo2\\Core\\Core.csproj",
+  "projectFilePath": "C:\\Users\\Alunos\\source\\repos\\AtividadePaulo2\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alunos\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Alunos\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
